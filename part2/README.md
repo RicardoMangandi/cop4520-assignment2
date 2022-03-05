@@ -36,7 +36,9 @@
   ```bash
   Please enter how many guests are coming to the party:
   ```
-  5. The program will print out in order the list of guests who went inside the showroom.
+  5. The program will print out the number of guests that were able to see the vase potentially including guests who requeued.
+  6. The program will let the user know the size of the queue after it has finished looping for a second.
+  7. The program will then empty out the queue for the user.
 
 ## Program Implementation
   
@@ -56,8 +58,7 @@
 
 ## Experiments ran
 
-  My concern in regards to my implementation is I do not have control over a guest being in the queue multiple times during a given time. Since the guests queue in pseudo random. 
-  I realized due to the program queueing in as many guests within a second causes a varied amount of guests that are able to get queued. Below you will find some runs of the number of guests that were queued within a second.
+My concern in regards to my implementation is I do not have control in regards to the number of guests that are able to enter all the time. This is due to the time limit I am enforcing. The guests are able to requeue but it seems that in a second there are 18,000 - 20,000 guests that are able to be queued in. I could potentially increase the factor to allow more guests in an alloted time based on the input size. Below you will find some runs of the number of guests that were queued within a second.
   
   | Run # | Total # of Guests Invited | # of Guests Queued and saw Vase| 
   | --- | --- | --- |
